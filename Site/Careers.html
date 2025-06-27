@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="careers.css">
+    <link rel="icon" href="/Images/Logo.png">
+    <title>MA Inc. - Careers</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Images/Logo.png" alt="Company Logo" id="logo"></a>
+        <h1 class="company-name">MA Inc.</h1>
+        <nav>
+            <ul class="page-navigation">
+                <a href="index.html"><li>Home</li></a>
+                <a href="About.html"><li>About Us</li></a>
+                <a href="products.html"><li>Products</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 style="text-align: center">Jobs:</h1>
+        <div class="job-search">
+            <!--Job Search Categories-->
+            <div class="categories">
+                <Label for="categories" >Category:</Label>
+                <Select name="categories" id="categories" onchange="sortJobs()">
+                    <option value="">All</option>
+                </Select><br>
+
+                <Label for="country">Country/Region:</Label>
+                <Select name="country" id="country" onchange="sortJobs()">
+                    <option value="">All</option>
+                </Select><br>
+
+                <Label for="province">State/Province:</Label>
+                <Select name="province" id="province" onchange="sortJobs()">
+                    <option value="">All</option>
+                </Select><br>
+
+                <Label for="hiring-type">Hiring Type:</Label>
+                <Select name="hiring-type" id="hiring-type" onchange="sortJobs()">
+                        <option value="">All</option>
+                </Select><br>
+            </div>
+
+            <!--Job Search Query-->
+            <div class="results">
+                <ul id="result-list">
+
+                </ul>
+            </div> 
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <ul>
+                <a href="Careers.html"><li>Careers</li></a>
+                <a href="About.html"><li>About</li></a>
+                <a href="ContactUs.html"><li>Contact Us</li></a>            
+            </ul>
+            <p>&copy; MA, Inc.</p><br>
+        </div>
+    </footer>
+
+    <script src="careers.js"></script>
+</body>
+</html>

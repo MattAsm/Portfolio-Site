@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Overall Stylesheet-->
+    <link rel="stylesheet" href="contactUsStyle.css"> <!--Page Specific Stylesheet-->
+    <link rel="icon" href="/Images/Logo.png">
+    <title>MA Inc. - Contact Us</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Images/Logo.png" alt="Company Logo" id="logo"></a>
+        <h1 class="company-name">MA Inc.</h1>
+        <nav>
+            <ul class="page-navigation">
+                <a href="index.html"><li>Home</li></a>
+                <a href="About.html"><li>About Us</li></a>
+                <a href="products.css"><li>Products</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-div">
+            <h1>Need Assistance?</h1><br>
+            <h4>Contact us through our official email down below.</h4><br>
+            <h6>Or call/text us at (123) 456-7890 and a representative will be with you shortly. 
+                (Please don't actually call or text them, this is a fake website after all)</h6>
+        </div>
+
+        <div class="email-input" href="mailto:matthew.asmunt@yahoo.ca">
+            <label for="name-input">Your Name:</label>
+            <Input type="text" id="name-input" placeholder="John Doe"></Input><br>
+
+            <label for="message">Your Message: </label>
+            <textarea type="text" placeholder="You're hired! 👉👈" id="message"></textarea><br>
+            <button type="submit" onclick="templateEmail()">Submit</button>
+        </div><br>
+
+        <div class="btm-text">
+            <h5>Having trouble? <br>Manually email us at: <strong>matthew.asmunt@yahoo.ca</strong></h5>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <a href="Careers.html"><li>Careers</li></a>
+                <a href="About.html"><li>About</li></a>
+                <a href="ContactUs.html"><li>Contact Us</li></a>            
+            </ul>
+            <p>&copy; MA, Inc.</p><br>
+        </div>
+    </footer>
+
+    <script src="emailScript.js"></script>
+</body>
+</html>
